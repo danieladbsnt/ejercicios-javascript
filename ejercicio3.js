@@ -11,7 +11,7 @@ const arrCities = [
   ]
 
 const arrNoCapitales = arrCities.filter(city => {
-    if (city.capital === false) return console.log(city);
+    if (!city.capital) return console.log(city);
 })
 
 console.log(arrNoCapitales);
